@@ -1,20 +1,21 @@
-$('.name').click(function () {
+$('.name').click(function (event) {
     event.preventDefault();
     $('body').animate({ scrollTop: 0 }, 'slow');
 });
 
 
-$('.js-more-button').click(function() {
+$('.js-more-button').click(function(event) {
     event.preventDefault();
     $('#more').toggleClass('hidden');
     $('.js-more-button').addClass('hidden');
     $('.js-scroll-top').removeClass('hidden');
-    $('body').animate({ scrollTop: $(document).height() }, 'slow');
+    
+    $('body,html').animate({ scrollTop: $(document).height() }, 'slow');
 })
 
-$('.js-scroll-top').on('click', function() {
+$('.js-scroll-top').on('click', function(event) {
     event.preventDefault();
-    $('body').animate({ scrollTop: 0 }, 'slow');
+    $('body, html').animate({ scrollTop: 0 }, 'slow');
     $('#more').addClass('hidden');
     $('.js-scroll-top').addClass('hidden');
     //Adding setTimeout so that the more button does not show before scroll up
