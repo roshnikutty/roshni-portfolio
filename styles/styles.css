@@ -144,8 +144,6 @@ span{
     color: #212529;
     font-size: 0.99em;
 }
-
-
 @media (min-width: 1030px) {
     /* getting intro text in hero image on screen sizes above 1030px */
     .intro>.intro-first-line {
@@ -183,17 +181,26 @@ span{
         height: 15%;
         text-align: center;
     }
-    .light_button:hover, .dark_button:hover, .js-more-button:hover, .js-scroll-top:hover {
+    .js-more-button:hover, .js-scroll-top:hover {
         border: 2px solid #063b67;
         outline: none;
     }
-}
+    .light_button:hover, .dark_button:hover {
+        border: none;
+        outline: none;
+        background-color:black;
+        color: #cfd8dc;
+    }
 
 @media (max-width:600px){
     header>nav{
         flex-wrap: wrap;
         flex: 1;
         justify-content: space-between;
+    }
+    nav.col-xs-12{
+        align-items: center;
+        justify-content: center
     }
 }
 @media (max-width:539px){
