@@ -7,46 +7,46 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Titillium+Web" rel="stylesheet">
     <!--styles-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
     <link href="./styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 
 <body>
-    <header class="header_bar">
-        <nav>
-            <a href="#intro">
-                <h4 class="name"> Roshni Kutty </h4>
-            </a>
-            <ul class="right_corner">
-                <a href="#portfolio">
-                    <li class="light_button">portfolio</li>
+    <div class="container">
+        <header class="header_bar row">
+            <nav class="col-xs-12">
+                <a href="#intro">
+                    <h4 class="name"> Roshni Kutty </h4>
                 </a>
-                <a href="#contact">
-                    <li class="dark_button">contact</li>
-                </a>
-                <a href="#me">
-                    <li class="light_button">know me</li>
-                </a>
-                <!--<li class="dark_button">resume PDF</li>-->
-            </ul>
-        </nav>
-    </header>
+                <ul class="right_corner">
+                    <a href="#portfolio">
+                        <li class="light_button">portfolio</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="dark_button">contact</li>
+                    </a>
+                    <a href="#me">
+                        <li class="light_button">know me</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-    <main>
-        <div class="container">
+
+    <div class="container">
             <div class="row">
                 <section id="intro">
-                    <div class="intro">
-                        <img class=".img-responsive" src="./images/boston-1099418_1280.jpg" alt="Boston city skyline"/>
+                    <div class="intro col-md-12">
+                        <img class="hero img-responsive" src="./images/boston-1099418_1280.jpg" alt="Boston city skyline" />
                         <span class="intro-first-line">I am a full-stack developer & engineer based in Boston, MA.</span>
-                    </br>
-                                <span class="intro-second-line">JavaScript & its libraries fascinate me.</span>
-                            
+                        </br>
+                        <span class="intro-second-line">JavaScript & its libraries fascinate me.</span>
+
                     </div>
                 </section>
-                <hr>
 
                 <section id="portfolio" class="page-section">
                     <div class="col-md-12">
@@ -167,10 +167,8 @@
                 </div>
             </div>
 
-        </div>
-        <span class="credits"><strong>Boston city image credits to <a href="https://pixabay.com">pixabay</a></strong></span>
-    </main>
-
+            <span class="credits"><strong>Boston city image credits to <a href="https://pixabay.com">pixabay</a></strong></span>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="app.js"></script>
 
