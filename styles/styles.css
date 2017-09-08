@@ -145,6 +145,37 @@ span{
     font-size: 0.99em;
 }
 
+
+@media (min-width: 1030px) {
+    /* getting intro text in hero image on screen sizes above 1030px */
+    .intro>.intro-first-line {
+            position: absolute;
+            top: 10px;
+            opacity: 0.6;
+            letter-spacing: -1px;
+            padding: 10px;
+            line-height: 90%;
+    }
+    .intro-second-line {
+            position: absolute;
+            top: 53px;
+            opacity: 0.6;
+            letter-spacing: -1px;
+            padding: 10px;
+            line-height: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    /* having intro text, both sentences show without line break */
+    br { 
+        content: ' '; 
+    }
+        span.intro-first-line, span.intro-second-line {
+     font-size: 0.9em;
+ }
+}
+
 @media (max-width:700px) {
 
     li.light_button, li.dark_button {
@@ -158,34 +189,30 @@ span{
     }
 }
 
-@media (min-width: 1030px) {
-    /* getting intro text in hero image on screen sizes above 1030px */
- .intro>.intro-first-line {
-        position: absolute;
-        top: 10px;
-        /*left: 0;*/
-        opacity: 0.6;
-        letter-spacing: -1px;
-        padding: 10px;
-        line-height: 90%;
- }
-.intro-second-line {
-        position: absolute;
-        top: 53px;
-        /*left: 0;*/
-        opacity: 0.6;
-        letter-spacing: -1px;
-        padding: 10px;
-        line-height: 90%;
- }
- 
+@media (max-width:600px){
+    header>nav{
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-between;
+    }
+}
+@media (max-width:539px){
+    ul.right_corner{
+        margin: auto;
+    }
 }
 
-@media (max-width: 992px) {
-    br { 
-        content: ' '; 
+@media (max-width:370px) {
+    .header_bar, nav, nav>a, ul>a {
+        display: block;
     }
-        span.intro-first-line, span.intro-second-line {
-     font-size: 0.9em;
- }
+    ul.right_corner {
+        padding-left: 0px;
+        width: 100%;
+        margin: 14px;
+    }
+    li.light_button, li.dark_button {
+        width: 100%;
+        margin: 0;
+    }
 }
