@@ -26,6 +26,8 @@ a {
     display: inline-block;
     padding: 15px;
     margin: 0;
+    position: relative;
+
 }
 
 .right_corner {
@@ -58,7 +60,9 @@ a {
 }
 
 /* BODY STYLES */
-
+body {
+    background-color: #f5f5f5;
+}
 .container{
     margin: auto;
 }
@@ -97,8 +101,12 @@ a {
     display: flex;
 }
 
- #intro, #contact, #me{
+ #contact, #me{
       margin: auto;
+  }
+  #intro {
+      margin: 40px auto auto auto;
+      padding-top: 30px;
   }
   .intro {
     position: relative;
@@ -141,7 +149,13 @@ span{
     color: #212529;
     font-size: 0.99em;
 }
-
+.showOnScroll {
+    position: fixed;
+    top:0;
+    left:5px;
+    right:5px;
+    z-index: 5;
+}
 /* Media queries */
 @media (min-width: 1030px) {
     /* getting intro text in hero image on screen sizes above 1030px */
