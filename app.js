@@ -1,6 +1,6 @@
 $('.name').click(function (event) {
     event.preventDefault();
-    $('body').animate({ scrollTop: 0 }, 'slow');
+    $('body, html').animate({ scrollTop: 0 }, 'slow');
 });
 
 $('.js-more-button').click(function (event) {
@@ -8,8 +8,7 @@ $('.js-more-button').click(function (event) {
     $('#more').toggleClass('hidden');
     $('.js-more-button').addClass('hidden');
     $('.js-scroll-top').removeClass('hidden');
-
-    $('body,html').animate({ scrollTop: $(document).height() }, 'slow');
+    $('body, html').animate({ scrollTop: $(document).height() }, 'slow');
 })
 
 $('.js-scroll-top').on('click', function (event) {
