@@ -158,35 +158,64 @@ span{
 }
 @keyframes changeLetter {
   0% {
-    color: grey;  
+    color: #1596af;  
     content: "  engineer";
   }
   
   25% {
-      color: grey; 
+      color: #1596af; 
       content: "  building creative solutions using technology";
+
   }
   50%{
-    color: grey; 
-    content: "  building responsive, mobile friendly applications"
+    color: #1596af; 
+    content: "  building responsive, mobile friendly applications";
   }
   75% {
-      color: grey;
-      content: "  building interactive web applications"
+      color: #1596af;
+      content: "  building interactive web applications";
   }
   100% {
-      color: grey; 
-        content: "  full-stack developer";
+      color: #1596af; 
+      content: "  full-stack developer";
   }
 }
 
+@-webkit-keyframes changeLetter {
+  0% {
+    color: #1596af;  
+    content: "  engineer";
+  }
+  25% {
+      color: #1596af; 
+      content: "  building creative solutions using technology";
+
+  }
+  50%{
+    color: #1596af; 
+    content: "  building responsive, mobile friendly applications";
+
+  }
+  75% {
+      color: #1596af;
+      content: "  building interactive web applications";
+
+  }
+  100% {
+      color: #1596af; 
+      content: "  full-stack developer";
+  }
+}
 .name::after {
-    -webkit-animation: changeLetter 10s linear alternate;  /* Safari 4.0 - 8.0 */
-     animation: changeLetter 10s linear alternate;
+    content: "";
+    -webkit-animation: changeLetter 10s linear alternate;
+    -moz-animation: changeLetter 10s linear alternate;
+    -o-animation: changeLetter 10s linear alternate;
+    animation: changeLetter 10s linear alternate;
     -webkit-animation-iteration-count: 1; 
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
      animation-iteration-count: 1;
-    /*-webkit-animation-delay: 2s; 
-     /*animation-delay: 2s; */
 }
 
 /* Media queries */
