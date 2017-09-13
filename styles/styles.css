@@ -156,6 +156,39 @@ span{
     right:5px;
     z-index: 5;
 }
+@keyframes changeLetter {
+  0% {
+    color: grey;  
+    content: "  engineer";
+  }
+  
+  25% {
+      color: grey; 
+      content: "  building creative solutions using technology";
+  }
+  50%{
+    color: grey; 
+    content: "  building responsive, mobile friendly applications"
+  }
+  75% {
+      color: grey;
+      content: "  building interactive web applications"
+  }
+  100% {
+      color: grey; 
+        content: "  full-stack developer";
+  }
+}
+
+.name::after {
+    -webkit-animation: changeLetter 10s linear alternate;  /* Safari 4.0 - 8.0 */
+     animation: changeLetter 10s linear alternate;
+    -webkit-animation-iteration-count: 1; 
+     animation-iteration-count: 1;
+    /*-webkit-animation-delay: 2s; 
+     /*animation-delay: 2s; */
+}
+
 /* Media queries */
 @media (min-width: 1030px) {
     /* getting intro text in hero image on screen sizes above 1030px */
@@ -166,6 +199,7 @@ span{
             letter-spacing: -1px;
             padding: 10px;
             line-height: 90%;
+            left: 16px;
     }
     .intro-second-line {
             position: absolute;
@@ -175,6 +209,13 @@ span{
             padding: 10px;
             line-height: 90%;
     }
+    .punc {
+            opacity: 0.5;
+            padding: 0 17px 0 10px;
+    }
+    .contact-list li{
+            font-size: 0.9em;
+    }
 }
 
 @media (max-width: 992px) {
@@ -182,9 +223,12 @@ span{
     br { 
         content: ' '; 
     }
-        span.intro-first-line, span.intro-second-line {
-     font-size: 0.9em;
- }
+    span.intro-first-line, span.intro-second-line {
+        font-size: 0.9em;
+    }
+    .contact-list span{
+        display: none;
+    }
 }
 
 @media (max-width:700px) {

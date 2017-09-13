@@ -31,14 +31,3 @@ $(window).scroll(function (event) {
     }
     lastScrollTop = st;
 });
-
-function onPageLoad() {
-        $('.name').animate({ left: '30px' }, "fast");
-        $('.name').animate({ left: '0px' }, "fast");
-        $('.name').animate({ left: '20px' }, "fast");
-        $('.name').animate({ left: '0px' }, "fast");
-        $('.name').animate({ left: '10px' }, "fast");
-        $('.name').animate({ left: '0px' }, "fast");
-}
-
-$(onPageLoad);
