@@ -4,8 +4,11 @@
     font-family: 'Quicksand', sans-serif;
     color: #212529;
 }
-a {
+a{
     color: inherit;
+    text-decoration: none;
+}
+a:hover{
     text-decoration: none;
 }
 
@@ -156,69 +159,96 @@ span{
     right:5px;
     z-index: 5;
 }
-@keyframes changeLetter {
-  0% {
-    color: #1596af;  
-    content: "  engineer";
-  }
-  
-  25% {
-      color: #1596af; 
-      content: "  building creative solutions using technology";
+    @keyframes changeLetter {
+            0% {
+                color: #1596af;  
+                content: "  engineer";
+            }
+            
+            25% {
+                color: #1596af; 
+                content: "  building creative solutions using technology";
 
-  }
-  50%{
-    color: #1596af; 
-    content: "  building responsive, mobile friendly applications";
-  }
-  75% {
-      color: #1596af;
-      content: "  building interactive web applications";
-  }
-  100% {
-      color: #1596af; 
-      content: "  full-stack developer";
-  }
+            }
+            50%{
+                color: #1596af; 
+                content: "  building responsive, mobile friendly applications";
+            }
+            75% {
+                color: #1596af;
+                content: "  building interactive web applications";
+            }
+            100% {
+                color: #1596af; 
+                content: "  full-stack developer";
+            }
+        }
+
+        @keyframes changeBelowHero {
+
+            0% {
+                color: inherit;  
+                content: "I am an engineer.";
+            }
+            25% {
+                color: inherit; 
+                content: "I build creative solutions using technology.";
+            }
+            50%{
+                color: inherit; 
+                content: "I build responsive, mobile friendly applications.";
+            }
+            75% {
+                color: inherit;
+                content: "I build interactive web applications.";
+            }
+            100% {
+                color: inherit; 
+                content: "I am a full-stack developer.";
+            }
+    }
+/*flex order in full screen display would be default with text on left and image on right*/
+.apply-flex{
+    display: flex;
 }
-
-@-webkit-keyframes changeLetter {
-  0% {
-    color: #1596af;  
-    content: "  engineer";
-  }
-  25% {
-      color: #1596af; 
-      content: "  building creative solutions using technology";
-
-  }
-  50%{
-    color: #1596af; 
-    content: "  building responsive, mobile friendly applications";
-
-  }
-  75% {
-      color: #1596af;
-      content: "  building interactive web applications";
-
-  }
-  100% {
-      color: #1596af; 
-      content: "  full-stack developer";
-  }
+.flex-container {
+    justify-content: center;
 }
-.name::after {
-    content: "";
-    -webkit-animation: changeLetter 10s linear alternate;
-    -moz-animation: changeLetter 10s linear alternate;
-    -o-animation: changeLetter 10s linear alternate;
-    animation: changeLetter 10s linear alternate;
-    -webkit-animation-iteration-count: 1; 
-    -moz-animation-iteration-count: 1;
-    -o-animation-iteration-count: 1;
-     animation-iteration-count: 1;
+.roshni{
+    width: auto;
+    height: auto;
 }
-
 /* Media queries */
+@media (min-width: 1200px) {
+
+    .name::after {
+        content: "";
+        /*-webkit-animation: changeLetter 10s linear alternate;*/
+        -moz-animation: changeLetter 10s linear alternate;
+        -o-animation: changeLetter 10s linear alternate;
+        animation: changeLetter 10s linear alternate;
+        /*-webkit-animation-iteration-count: 1; */
+        -moz-animation-iteration-count: 1;
+        -o-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+
+}
+/*
+@media (max-width:1199px) {
+    .change-text::after {
+       height: 50px;
+         content: "";
+        -moz-animation: changeBelowHero 10s linear alternate;
+        -o-animation: changeBelowHero 10s linear alternate;
+        animation: changeBelowHero 10s linear alternate;
+        -moz-animation-iteration-count: 1;
+        -o-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+}
+*/
+
 @media (min-width: 1030px) {
     /* getting intro text in hero image on screen sizes above 1030px */
     .intro>.intro-first-line {
@@ -257,6 +287,25 @@ span{
     }
     .contact-list span{
         display: none;
+    }
+}
+@media (min-width: 769px) {
+    /*image should show above text*/
+    .apply-flex .portfolio-img-parent {
+        order: 2;
+    }
+    .apply-flex .portfolio-des {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    /*image should show above text*/
+    .apply-flex .portfolio-img-parent {
+        order: 1;
+    }
+    .apply-flex .portfolio-des {
+        order: 2;
     }
 }
 
