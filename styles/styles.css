@@ -85,7 +85,7 @@ body {
 .intro-second-line{
     text-align: left;
 }
-#technologies h4 {
+#technologies h5 {
     padding: 0 20px;
     color: #036477;
 }
@@ -221,6 +221,11 @@ span{
     width: auto;
     height: auto;
 }
+.punc {
+        opacity: 0.5;
+        padding: 0 10px 0 10px;
+}
+
 /* Media queries */
 @media (min-width: 1200px) {
 
@@ -270,10 +275,6 @@ span{
             letter-spacing: -1px;
             padding: 10px;
             line-height: 90%;
-    }
-    .punc {
-            opacity: 0.5;
-            padding: 0 17px 0 10px;
     }
     .contact-list li{
             font-size: 0.9em;
