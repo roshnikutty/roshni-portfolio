@@ -85,7 +85,10 @@ body {
 .intro-second-line{
     text-align: left;
 }
-
+#technologies h4 {
+    padding: 0 20px;
+    color: #036477;
+}
 .portfolio-img{
     width: 100%;
     height: auto;
@@ -161,25 +164,25 @@ span{
 }
     @keyframes changeLetter {
             0% {
-                color: #1596af;  
+                color: #036477;  
                 content: "  engineer";
             }
             
             25% {
-                color: #1596af; 
+                color: #036477; 
                 content: "  building creative solutions using technology";
 
             }
             50%{
-                color: #1596af; 
+                color: #036477; 
                 content: "  building responsive, mobile friendly applications";
             }
             75% {
-                color: #1596af;
+                color: #036477;
                 content: "  building interactive web applications";
             }
             100% {
-                color: #1596af; 
+                color: #036477; 
                 content: "  full-stack developer";
             }
         }
