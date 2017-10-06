@@ -348,6 +348,11 @@ span{
     ul.right_corner{
         margin: auto;
     }
+    #intro {
+        padding-top: 100px;
+    }
+
+
 }
 
 @media (max-width:385px) {
