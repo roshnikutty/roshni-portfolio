@@ -167,6 +167,11 @@ span{
     right:5px;
     z-index: 5;
 }
+.line-style {
+    width: 60%;
+    margin: 10 auto;
+    color:grey;
+}
     @keyframes changeLetter {
             0% {
                 color: #036477;  
