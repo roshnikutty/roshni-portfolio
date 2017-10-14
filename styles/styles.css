@@ -39,14 +39,16 @@ a:hover{
     font-family: 'Titillium Web', sans-serif;
 }
 
-.light_button, .dark_button, .js-more-button, .js-scroll-top {
+.light_button, .dark_button, .js-more-button, .js-scroll-top, .view-code {
     padding: 10px;
     margin-right: 30px;
     display: inline-block;
     font-family: 'Titillium Web', sans-serif;
 }
-
-.light_button {
+.view-code{
+    margin-top: 10px;
+}
+.light_button, .view-code {
     background-color: #cfd8dc;
     color: #063b67;
 }
@@ -55,7 +57,7 @@ a:hover{
     background-color: #063b67;
     color: #ffffff;
 }
-.light_button:hover, .dark_button:hover, .js-more-button:hover, .js-scroll-top:hover {
+.light_button:hover, .dark_button:hover, .js-more-button:hover, .js-scroll-top:hover, .view-code:hover {
     cursor: pointer;
     outline: 2px solid #063b67;
     color:#063b67;
@@ -144,6 +146,7 @@ body {
 .icon {
     margin: 0 5px;
 }
+
 .hidden {
     display: none;
 }
@@ -302,9 +305,14 @@ span{
         display: none;
     }
     .proj-descriptors {
-    display: block;
-    margin-top: 7px;
-}
+        display: block;
+        margin-top: 7px;
+    }
+    .view-code {
+        display: block;
+        width: 88.4062px;
+    }
+
 }
 @media (min-width: 769px) {
     /*image should show above text*/
